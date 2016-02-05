@@ -1,0 +1,19 @@
+defaults: &defaults
+  mq_vhost: '/'
+  mq_host: 127.0.0.1
+  mq_api_host: 127.0.0.1
+  mq_username: 'guest'
+  mq_password: 'guest'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
