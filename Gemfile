@@ -13,10 +13,12 @@ gem 'colorize', '0.7.2'
 gem 'json'
 gem 'rake'
 gem 'httparty'
+gem 'hutch'
+gem 'redis'
 
 
 group :development do
-  gem 'thin'
+  gem 'puma'
   gem 'shotgun'
 end
 
