@@ -1,3 +1,8 @@
 Bundler.require
-require "sinatra/activerecord/rake"
 require "./app"
+
+task :routes do
+  RelayApp::App.routes.each do |route|
+    puts route.to_s.colorize(:green)
+  end
+end
