@@ -17,7 +17,7 @@ module API
 
         desc 'this route description'
         post '/' do
-          parameter = params.merge({version: 'v4'})
+          parameter = params.merge({version: 'v3'})
           response = RunUtility.verify_request(parameter)
           # if response.blank?
           response = ProductionRun.new(parameter).save
