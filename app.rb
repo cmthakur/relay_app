@@ -11,6 +11,7 @@ I18n.enforce_available_locales = false
 
 module RelayApp
   class App < Grape::API
-    mount API::V1::Base
+    mount API::V3::ProductionRunsController
+    mount API::V4::ProductionRunsController
   end
 end
