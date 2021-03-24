@@ -108,7 +108,7 @@ GEM
       pry (>= 0.9.10, < 0.11.0)
     puma (2.16.0)
     puma (2.16.0-java)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-contrib (1.4.0)
